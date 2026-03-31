@@ -30,7 +30,7 @@ The system manages two main entities: Students and Teachers. It uses Python dict
 ---
 
 ## Technical Stack
-Language: Python 3.x  
+Language: Python 3.13
 
 Libraries Used:  
 pandas for data manipulation and display  
