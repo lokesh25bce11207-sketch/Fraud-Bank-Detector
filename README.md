@@ -1,29 +1,65 @@
-# Bank Fraud Detector (Lightweight AI System)
+# Smart School Management System (Python and Pandas)
 
-A Python-based Bank Management System designed with a built-in **Fraud Detection Logic**. This system allows for basic banking operations while monitoring transaction safety limits to prevent unauthorized or high-risk withdrawals.
 
-##  Features
-**Account Management:** View all registered accounts with balance and branch details.
-**Secure Deposits:** Add funds to any valid account with input validation.
-**AI Fraud Check:** Automatically blocks any withdrawal attempt exceeding the safety threshold ($3,500).
-**Balance Inquiry:** Real-time balance checking for specific account numbers.
-**Error Handling:** Robust protection against invalid numerical inputs and non-existent account IDs.
+## Student Details
+Name: Lokesh Kasana 
+Roll Number: 25BCE11207   
+Course: B.Tech CSE    
+
+
+---
+
+## Project Overview
+The Smart School Management System is a console-based application designed to manage school administrative data efficiently.  
+
+Unlike traditional menu-driven programs, this system uses a chatbot-style interface where users can interact using simple English commands.  
+
+The system manages two main entities: Students and Teachers. It uses Python dictionaries for fast data handling and the Pandas library for structured and professional data display.
+
+---
+
+## Key Features
+- Chatbot Interaction: Users can type commands like "Add a student" or "Show all teachers"  
+- Data Visualization: Uses Pandas DataFrames for clean and structured table display  
+- Student Records: Stores details like Admission Number, Roll Number, DOB, Gender, Class, Section, and Parent Information  
+- Teacher Management: Stores Employee ID, Qualification, Subject, Date of Joining, and Designation  
+- Search Functionality: Search records by Name, Class, Subject, or Address  
+- Input Validation: Uses try-except blocks to handle invalid inputs  
+- CRUD Operations: Add, View, Update, and Delete records  
+
+---
 
 ## Technical Stack
-**Language:** Python 3.x
-**Data Structure:** Nested Dictionaries (for fast account lookups).
-**Logic:** Procedural programming with conditional security gates.
+Language: Python 3.x  
+
+Libraries Used:  
+pandas for data manipulation and display  
+tabulate (via pandas to_markdown) for formatted tables  
+
+Data Structure: Nested Dictionaries  
+
+---
 
 ## How to Use
-1. Run the script: `python bank_system.py`
-2. Select an option from the main menu (1-5).
-3. Follow the on-screen prompts to enter Account Numbers (e.g., `A001`).
-4. To test the **Fraud Detector**, try withdrawing an amount greater than **$3,500**.
+1. Run the Python script  
+2. Use simple commands like:  
+   Add: Add a student or Insert teacher  
+   View: Show students or Display all teachers  
+   Search: Find student or Search teacher  
+   Update: Modify student or Change teacher details  
+   Delete: Remove student or Delete teacher  
+3. Type Exit or Quit to close the program  
 
-## Security Logic
-The system uses a `fraud_check` function that acts as a middleware between the user request and the database. 
-- **Threshold:** $3,500
-- **Action:** If `amount >= threshold`, the transaction is killed instantly and a `SECURITY ALERT` is logged.
+---
 
-## License
-Open-source for educational and training purposes.
+## System Logic
+Data Storage: Data is stored in dictionaries using Admission Number or Employee ID as unique keys  
+
+Table Generation: Data is converted into a Pandas DataFrame and transposed for proper display  
+
+Exception Handling: try-except blocks are used to handle invalid inputs without crashing the system  
+
+---
+
+## Project Note
+This project is developed as a practical implementation of Python programming concepts including data structures, file handling, and basic AI-style interaction.
